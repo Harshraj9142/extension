@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GreenCart",
+  "version": "1.0",
+  "description": "Eco-Ratings for online shopping",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["http://localhost:5000/"],
+  "action": {
+    "default_popup": "popup.html"
+   
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

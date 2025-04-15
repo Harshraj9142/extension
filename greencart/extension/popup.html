@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>🌱 GreenCart</h1>
+    <p id="rating">Eco-Rating: </p>
+    <p id="footprint">Estimated CO₂: </p>
+  </header>
+  
+  <!-- Greener Alternatives Section -->
+  <section id="alternatives">
+    <h2>Greener Alternatives:</h2>
+    <ul id="altList">
+      <!-- Dynamically populated -->
+    </ul>
+  </section>
+
+  <!-- Product Rating Section -->
+  <section id="ratingSection">
+    <h2>Rate the Product</h2>
+    <label for="userRating">Select Rating: </label>
+    <select id="userRating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button id="submitRating">Submit Rating</button>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certificationsSection">
+    <h2>Certifications:</h2>
+    <ul id="certifications">
+      <!-- Dynamically populated -->
+    </ul>
+  </section>
+
+  <!-- Price Comparison Section -->
+  <section id="priceComparisonSection">
+    <h2>Price Comparison:</h2>
+    <ul id="priceComparison">
+      <!-- Dynamically populated -->
+    </ul>
+  </section>
+
+  <!-- Social Sharing Section -->
+  <section id="socialShare">
+    <button id="shareTwitter">Share on Twitter</button>
+    <button id="shareFacebook">Share on Facebook</button>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
